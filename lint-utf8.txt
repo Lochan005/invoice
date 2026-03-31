@@ -1,0 +1,88 @@
+﻿
+> saitech-engineering@0.0.0 lint
+> eslint .
+
+node.exe : 
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:
+\Users\locha\AppData\Roami
+ng\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (:  
+  String) [], RemoteExc   
+ eption
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+Oops! Something went 
+wrong! :(
+
+ESLint: 9.39.4
+
+TypeError: Cannot read 
+properties of undefined 
+(reading 'recommended')
+    at file:///C:/Users/lo
+cha/.gemini/antigravity/sc
+ratch/saitech-engineering/
+eslint.config.js?mtime=177
+4894268332:13:31
+    at ModuleJob.run (node
+:internal/modules/esm/modu
+le_job:413:25)
+    at async onImport.trac
+ePromise.__proto__ (node:i
+nternal/modules/esm/loader
+:660:26)
+    at async 
+dynamicImportConfig (C:\Us
+ers\locha\.gemini\antigrav
+ity\scratch\saitech-engine
+ering\node_modules\eslint\
+lib\config\config-loader.j
+s:186:17)
+    at async 
+loadConfigFile (C:\Users\l
+ocha\.gemini\antigravity\s
+cratch\saitech-engineering
+\node_modules\eslint\lib\c
+onfig\config-loader.js:276
+:9)
+    at async ConfigLoader.
+calculateConfigArray (C:\U
+sers\locha\.gemini\antigra
+vity\scratch\saitech-engin
+eering\node_modules\eslint
+\lib\config\config-loader.
+js:589:23)
+    at async 
+#calculateConfigArray (C:\
+Users\locha\.gemini\antigr
+avity\scratch\saitech-engi
+neering\node_modules\eslin
+t\lib\config\config-loader
+.js:743:23)
+    at async entryFilter (
+C:\Users\locha\.gemini\ant
+igravity\scratch\saitech-e
+ngineering\node_modules\es
+lint\lib\eslint\eslint-hel
+pers.js:322:5)
+    at async 
+NodeHfs.<anonymous> (file:
+///C:/Users/locha/.gemini/
+antigravity/scratch/saitec
+h-engineering/node_modules
+/@humanfs/core/src/hfs.js:
+574:24)
+    at async NodeHfs.walk 
+(file:///C:/Users/locha/.g
+emini/antigravity/scratch/
+saitech-engineering/node_m
+odules/@humanfs/core/src/h
+fs.js:614:3)
