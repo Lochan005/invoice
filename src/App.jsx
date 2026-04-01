@@ -30,7 +30,7 @@ export default function SaitechEngineeringHomepage() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <div className="flex items-center gap-3">
             <img src="/images/logo.png" alt="SAITECH Engineering Pty Ltd. Logo" className="h-10 w-auto object-contain p-0.5 rounded-lg bg-white/5 backdrop-blur-sm" />
-            <span className="text-xl font-bold tracking-wider text-white">SAITECH Engineering</span>
+            <span className="text-xl font-bold tracking-wider text-white">SAITECH Engineering Pty Ltd.</span>
           </div>
           <div className="hidden space-x-8 text-sm font-medium text-slate-300 md:flex">
             <a href="#capabilities" className="hover:text-cyan-400 transition-colors">Capabilities</a>
@@ -38,9 +38,6 @@ export default function SaitechEngineeringHomepage() {
             <a href="#work-show" className="hover:text-cyan-400 transition-colors">Work Show</a>
             <a href="#contact" className="hover:text-cyan-400 transition-colors">Contact</a>
           </div>
-          <a href="tel:0470530451" className="rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/20">
-            0470 530 451
-          </a>
         </div>
       </nav>
 
@@ -52,7 +49,7 @@ export default function SaitechEngineeringHomepage() {
           <div className="absolute -right-20 bottom-0 h-[30rem] w-[30rem] rounded-full bg-indigo-500/20 blur-[120px]" />
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
         </div>
-        
+
         <div className="relative z-10 mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-32">
           <div className="grid items-center gap-16 lg:grid-cols-2">
             <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="max-w-2xl">
@@ -81,23 +78,23 @@ export default function SaitechEngineeringHomepage() {
               </motion.div>
             </motion.div>
 
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }} 
-              animate={{ opacity: 1, scale: 1 }} 
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative hidden lg:block"
             >
               <div className="relative rounded-[2rem] border border-white/10 bg-white/5 p-2 backdrop-blur-xl shadow-2xl">
-                
+
                 {/* Auto Sliding Hero Carousel */}
                 <div className="relative w-full h-[500px] rounded-[1.5rem] overflow-hidden shadow-inner bg-slate-800">
                   <AnimatePresence initial={false}>
                     {heroImages.map((num, idx) => (
                       heroIndex === idx && (
-                        <motion.img 
+                        <motion.img
                           key={num}
-                          src={`/images/hero/${num}.jpg`} 
-                          alt={`SAITECH capability view ${num}`} 
+                          src={`/images/hero/${num}.jpg`}
+                          alt={`SAITECH capability view ${num}`}
                           className="absolute inset-0 w-full h-full object-cover"
                           initial={{ opacity: 0, scale: 1.05 }}
                           animate={{ opacity: 1, scale: 1 }}
@@ -108,7 +105,7 @@ export default function SaitechEngineeringHomepage() {
                     ))}
                   </AnimatePresence>
                 </div>
-                
+
                 <div className="absolute -bottom-6 -left-6 z-20 rounded-3xl border border-white/10 bg-slate-900/90 p-5 backdrop-blur-xl shadow-2xl">
                   <div className="flex items-center gap-4">
                     <div className="rounded-full bg-emerald-500/20 p-2 text-emerald-400">
@@ -124,7 +121,7 @@ export default function SaitechEngineeringHomepage() {
             </motion.div>
           </div>
         </div>
-        
+
         {/* Curved Divider Line */}
         <div className="absolute bottom-0 w-full overflow-hidden leading-none">
           <svg className="relative block h-[50px] w-[calc(100%+1.3px)]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -135,7 +132,7 @@ export default function SaitechEngineeringHomepage() {
 
       {/* Feature Highlights Grid */}
       <section className="relative mx-auto -mt-12 max-w-7xl px-6 lg:px-8 z-20">
-        <motion.div 
+        <motion.div
           initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}
           className="grid gap-6 md:grid-cols-3"
         >
@@ -169,8 +166,8 @@ export default function SaitechEngineeringHomepage() {
               <div className="mt-10 grid gap-4 grid-cols-2 sm:grid-cols-3">
                 {[
                   "General Machining", "Precision Machining", "CNC Turning",
-                  "CNC Machining", "Conventional Lathe", "Milling",
-                  "Band Sawing", "Radial Drilling", "Fabrication"
+                  "Conventional Lathe Work", "Milling", "Band Saw Cutting",
+                  "Radial Drilling", "Fabrication Support"
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-3 text-sm font-semibold text-slate-700">
                     <div className="h-1.5 w-1.5 rounded-full bg-cyan-500"></div>
@@ -179,8 +176,8 @@ export default function SaitechEngineeringHomepage() {
                 ))}
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
               className="relative hidden lg:block"
             >
@@ -226,9 +223,9 @@ export default function SaitechEngineeringHomepage() {
                 </p>
                 <div className="mt-10 grid grid-cols-2 gap-4">
                   {["CNC Turning Centre", "CNC Machining Centre", "Conventional Lathe", "Milling Machine"].map(item => (
-                     <div key={item} className="rounded-xl bg-white/5 p-4 text-center text-sm font-semibold text-slate-300 border border-white/5 backdrop-blur-sm">
-                       {item}
-                     </div>
+                    <div key={item} className="rounded-xl bg-white/5 p-4 text-center text-sm font-semibold text-slate-300 border border-white/5 backdrop-blur-sm">
+                      {item}
+                    </div>
                   ))}
                 </div>
               </div>
@@ -237,15 +234,68 @@ export default function SaitechEngineeringHomepage() {
         </div>
       </section>
 
+      {/* Equipments Section */}
+      <section className="py-24 bg-slate-50 border-t border-slate-200">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="text-center mb-16">
+            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-slate-900">Equipments</h2>
+          </motion.div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              "CNC Turning Centre",
+              "CNC Machining Centre",
+              "Conventional Lathe",
+              "Milling Machine",
+              "Band Saw",
+              "Radial Drilling Machine"
+            ].map((item) => (
+              <motion.div key={item} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all flex items-center gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-50 text-cyan-600 transition-colors group-hover:bg-cyan-500 group-hover:text-white">
+                  <Settings2 size={24} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">{item}</h3>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div className="absolute left-0 bottom-0 h-96 w-96 -translate-x-1/2 translate-y-1/2 rounded-full bg-indigo-500/20 blur-[100px]" />
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="mb-16 text-center">
+            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-white">Why Choose Us</h2>
+          </motion.div>
+          <div className="grid gap-8 sm:grid-cols-2">
+            {[
+              "High-quality workmanship",
+              "Precision-focused machining solutions",
+              "Modern CNC and conventional workshop capability",
+              "Reliable support for maintenance, fabrication, and product development"
+            ].map((point, idx) => (
+              <motion.div key={idx} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} transition={{ delay: idx * 0.1 }} className="flex items-start gap-5 rounded-3xl bg-white/5 p-8 border border-white/10 backdrop-blur-md shadow-lg transition-transform hover:-translate-y-1">
+                <div className="flex-shrink-0 mt-1 rounded-full bg-cyan-500/20 p-2 text-cyan-400">
+                  <ShieldCheck size={24} />
+                </div>
+                <p className="text-lg text-slate-200 leading-relaxed font-medium">
+                  {point}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Infinite Marquee Work Show Section */}
       <section id="work-show" className="py-24 bg-white overflow-hidden border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-12">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="text-center">
-             <p className="text-sm font-bold uppercase tracking-widest text-cyan-600 mb-2">Our Work</p>
-             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-slate-900">Precision parts showcase</h2>
+            <p className="text-sm font-bold uppercase tracking-widest text-cyan-600 mb-2">Our Work</p>
+            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-slate-900">Precision parts showcase</h2>
           </motion.div>
         </div>
-        
+
         {/* The marquee wrapper must hide overflow completely */}
         <div className="relative w-full overflow-hidden shrink-0 flex items-center justify-start flex-nowrap bg-white py-4 mask-edges group">
           {/* Two consecutive identical containers animate-marquee to create the loop */}
@@ -271,13 +321,13 @@ export default function SaitechEngineeringHomepage() {
       {/* CTA / Contact Section */}
       <section id="contact" className="py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}
             className="overflow-hidden rounded-[3rem] bg-gradient-to-br from-cyan-600 to-indigo-700 shadow-2xl relative"
           >
             {/* Background design pattern */}
             <div className="absolute top-0 right-0 -mr-20 -mt-20 h-64 w-64 rounded-full bg-white/10 blur-[50px] mix-blend-overlay"></div>
-            
+
             <div className="grid lg:grid-cols-2 items-center p-12 sm:p-16 lg:p-20 relative z-10 gap-16">
               <div>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white mb-6">Let’s discuss your next machining or fabrication job.</h2>
@@ -297,7 +347,7 @@ export default function SaitechEngineeringHomepage() {
                   </div>
                   <div className="border-b border-white/10 pb-6">
                     <p className="text-sm font-semibold text-cyan-300 uppercase tracking-widest mb-1">Address</p>
-                    <p className="text-lg">Unit 5, 10 Tidal Way<br/>Bibra Lake WA 6163</p>
+                    <p className="text-lg">Unit 5, 10 Tidal Way<br />Bibra Lake WA 6163</p>
                   </div>
                   <div className="border-b border-white/10 pb-6">
                     <div className="grid grid-cols-2 gap-4">
