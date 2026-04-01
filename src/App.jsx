@@ -35,6 +35,7 @@ export default function SaitechEngineeringHomepage() {
           <div className="hidden space-x-8 text-sm font-medium text-slate-300 md:flex">
             <a href="#capabilities" className="hover:text-cyan-400 transition-colors">Capabilities</a>
             <a href="#services" className="hover:text-cyan-400 transition-colors">Services</a>
+            <a href="#equipment" className="hover:text-cyan-400 transition-colors">Equipment</a>
             <a href="#work-show" className="hover:text-cyan-400 transition-colors">Work Show</a>
             <a href="#contact" className="hover:text-cyan-400 transition-colors">Contact</a>
           </div>
@@ -235,7 +236,7 @@ export default function SaitechEngineeringHomepage() {
       </section>
 
       {/* Equipments Section */}
-      <section className="py-24 bg-slate-50 border-t border-slate-200">
+      <section id="equipment" className="py-24 bg-slate-50 border-t border-slate-200">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-slate-900">Equipments</h2>
