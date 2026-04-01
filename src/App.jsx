@@ -29,8 +29,8 @@ export default function SaitechEngineeringHomepage() {
       <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-slate-900/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <div className="flex items-center gap-3">
-            <img src="/images/logo.png" alt="SAITECH Engineering Logo" className="h-10 w-auto object-contain p-0.5 rounded-lg bg-white/5 backdrop-blur-sm" />
-            <span className="text-xl font-bold tracking-wider text-white">SAITECH</span>
+            <img src="/images/logo.png" alt="SAITECH Engineering Pty Ltd. Logo" className="h-10 w-auto object-contain p-0.5 rounded-lg bg-white/5 backdrop-blur-sm" />
+            <span className="text-xl font-bold tracking-wider text-white">SAITECH Engineering</span>
           </div>
           <div className="hidden space-x-8 text-sm font-medium text-slate-300 md:flex">
             <a href="#capabilities" className="hover:text-cyan-400 transition-colors">Capabilities</a>
@@ -69,7 +69,7 @@ export default function SaitechEngineeringHomepage() {
                 Engineering excellence, built for precision.
               </motion.h1>
               <motion.p variants={fadeInUp} className="mt-6 text-lg leading-relaxed text-slate-300">
-                SAITECH Engineering Services delivers reliable machining, fabrication, and maintenance solutions backed by CNC and conventional workshop capability for industrial and commercial needs.
+                SAITECH Engineering Pty Ltd. delivers reliable machining, fabrication, and maintenance solutions backed by CNC and conventional workshop capability for industrial and commercial needs.
               </motion.p>
               <motion.div variants={fadeInUp} className="mt-10 flex flex-wrap gap-4">
                 <a href="#contact" className="group rounded-2xl bg-cyan-500 px-6 py-3.5 text-sm font-semibold text-slate-900 shadow-lg shadow-cyan-500/25 transition-all hover:bg-cyan-400 hover:shadow-cyan-400/40">
@@ -282,7 +282,7 @@ export default function SaitechEngineeringHomepage() {
               <div>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white mb-6">Let’s discuss your next machining or fabrication job.</h2>
                 <p className="text-lg text-cyan-50 mb-10">
-                  Contact SAITECH Engineering Services for reliable precision machining, fabrication, maintenance support, or custom product development. We are ready to help.
+                  Contact SAITECH Engineering Pty Ltd. for reliable precision machining, fabrication, maintenance support, or custom product development. We are ready to help.
                 </p>
                 <a href="tel:0470530451" className="inline-flex items-center gap-3 rounded-2xl bg-white px-8 py-4 text-lg font-bold text-indigo-900 shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl">
                   Call 0470 530 451
@@ -293,23 +293,31 @@ export default function SaitechEngineeringHomepage() {
                 <div className="space-y-6 text-cyan-50">
                   <div className="border-b border-white/10 pb-6">
                     <p className="text-sm font-semibold text-cyan-300 uppercase tracking-widest mb-1">Company</p>
-                    <p className="text-xl font-medium text-white">SAITECH Engineering Services</p>
+                    <p className="text-xl font-medium text-white">SAITECH Engineering Pty Ltd.</p>
                   </div>
                   <div className="border-b border-white/10 pb-6">
                     <p className="text-sm font-semibold text-cyan-300 uppercase tracking-widest mb-1">Address</p>
                     <p className="text-lg">Unit 5, 10 Tidal Way<br/>Bibra Lake WA 6163</p>
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <p className="text-sm font-semibold text-cyan-300 uppercase tracking-widest mb-1">Director</p>
-                      <p className="text-lg font-medium text-white">Shiva Prasad</p>
+                  <div className="border-b border-white/10 pb-6">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <p className="text-sm font-semibold text-cyan-300 uppercase tracking-widest mb-1">Director</p>
+                        <p className="text-lg font-medium text-white">Shiva Prasad</p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-cyan-300 uppercase tracking-widest mb-1">Mobile</p>
+                        <a href="tel:0470530451" className="text-lg font-medium text-white hover:text-cyan-300 transition-colors">
+                          0470 530 451
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-sm font-semibold text-cyan-300 uppercase tracking-widest mb-1">Mobile</p>
-                      <a href="tel:0470530451" className="text-lg font-medium text-white hover:text-cyan-300 transition-colors">
-                        0470 530 451
-                      </a>
-                    </div>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-cyan-300 uppercase tracking-widest mb-1">Email</p>
+                    <a href="mailto:saitechengineering2023@gmail.com" className="text-lg font-medium text-white hover:text-cyan-300 transition-colors break-all">
+                      saitechengineering2023@gmail.com
+                    </a>
                   </div>
                 </div>
               </div>
@@ -321,7 +329,7 @@ export default function SaitechEngineeringHomepage() {
       {/* Footer */}
       <footer className="bg-slate-950 py-12 text-center text-slate-500">
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} SAITECH Engineering Services. All rights reserved.
+          &copy; {new Date().getFullYear()} SAITECH Engineering Pty Ltd. All rights reserved.
         </p>
       </footer>
     </div>
