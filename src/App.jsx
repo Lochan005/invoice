@@ -366,8 +366,8 @@ export default function SaitechEngineeringHomepage() {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-cyan-300 uppercase tracking-widest mb-1">Email</p>
-                    <a href="mailto:saitechengineering2023@gmail.com" className="text-lg font-medium text-white hover:text-cyan-300 transition-colors break-all">
-                      saitechengineering2023@gmail.com
+                    <a href="mailto:shiva.prasad1947@gmail.com" className="text-lg font-medium text-white hover:text-cyan-300 transition-colors break-all">
+                      shiva.prasad1947@gmail.com
                     </a>
                   </div>
                 </div>
